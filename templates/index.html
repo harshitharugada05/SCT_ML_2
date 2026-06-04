@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Customer Segmentation</title>
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<nav>
+<h2>Customer Segmentation</h2>
+</nav>
+
+<div class="card">
+
+<h1>K-Means Customer Segmentation</h1>
+
+<form action="/predict" method="POST">
+
+<input type="number"
+name="income"
+placeholder="Annual Income"
+required>
+
+<input type="number"
+name="spending"
+placeholder="Spending Score"
+required>
+
+<button type="submit">
+Predict Segment
+</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
